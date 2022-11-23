@@ -31,6 +31,7 @@ def startWebdriver(chrome=True, headless=True) -> webdriver.Chrome:
         chrome_options.add_argument("--start-maximized")
         chrome_options.add_argument("disable-infobars")
         chrome_options.add_argument('--disable-browser-side-navigation')
+        chrome_options.binary_location = "C:\Program Files\Google\Chrome Beta\Application\chrome.exe"
         if headless:
             chrome_options.add_argument('--headless')
 
